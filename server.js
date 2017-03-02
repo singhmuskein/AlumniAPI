@@ -1,7 +1,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
-//var cool = require('cool-ascii-faces');
 var Alumnus = require('./models/Alumnus');
 var Course = require('./models/Course');
 var Alumni = require('./controllers/Alumni');
@@ -13,9 +12,6 @@ mongoose.connect(constants.MONGO_DB_URL);
 app.configure(function(){
     app.use(express.bodyParser());
 });
-// app.get('/cool', function(request, response) {
-//     response.send(cool());
-// });
 //Alumni Url Divert
 app.get('/', Alumni.homeData);
 app.get('/allAlumni', Alumni.findAll);
