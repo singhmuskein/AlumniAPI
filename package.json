@@ -1,5 +1,5 @@
 {
-  "name": "SNU Alumni Association",
+  "name": "snuaa",
   "description": "REST API with Node for Alumni Data",
   "version": "0.0.1",
   "private": true,
